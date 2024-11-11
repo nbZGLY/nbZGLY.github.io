@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>苏菲的世界---从神话到亚里士多德 | zgly&#39;s blog</title>
+  <title>特征提取 | zgly&#39;s blog</title>
   
   <meta name="author" content="Hasaxxxx" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,15 +17,15 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="《苏》作为哲学启蒙书籍，虽然叙述语调低幼了些，但仍是一本哲学入门的好书 神话世界自然派哲学家米雷斯特泰利斯雅典学者派关于“人”的哲学">
+  <meta name="description" content="在果蔬分拣任务中，特征提取是从图像中提取有助于区分良品和次品的信息。这些特征可以是颜色、形状、纹理等。对于有基础的Python用户，可以使用OpenCV和一些Python库来实现这些特征提取。下面我会一步步带你实现几个常用的特征提取方法。 1. 环境准备首先需要安装一些Python库： 1pip install opencv-python numpy  然后，导入这些库： 12import cv">
 <meta property="og:type" content="article">
-<meta property="og:title" content="苏菲的世界---从神话到亚里士多德">
-<meta property="og:url" content="https://github.com/nbZGLY/nbZGLY.github.io/2024/08/26/D3/index.html">
+<meta property="og:title" content="特征提取">
+<meta property="og:url" content="https://github.com/nbZGLY/nbZGLY.github.io/2024/11/11/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/index.html">
 <meta property="og:site_name" content="zgly&#39;s blog">
-<meta property="og:description" content="《苏》作为哲学启蒙书籍，虽然叙述语调低幼了些，但仍是一本哲学入门的好书 神话世界自然派哲学家米雷斯特泰利斯雅典学者派关于“人”的哲学">
+<meta property="og:description" content="在果蔬分拣任务中，特征提取是从图像中提取有助于区分良品和次品的信息。这些特征可以是颜色、形状、纹理等。对于有基础的Python用户，可以使用OpenCV和一些Python库来实现这些特征提取。下面我会一步步带你实现几个常用的特征提取方法。 1. 环境准备首先需要安装一些Python库： 1pip install opencv-python numpy  然后，导入这些库： 12import cv">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-08-25T23:58:56.929Z">
-<meta property="article:modified_time" content="2024-08-26T00:46:43.399Z">
+<meta property="article:published_time" content="2024-11-11T11:09:10.822Z">
+<meta property="article:modified_time" content="2024-11-11T11:10:01.527Z">
 <meta property="article:author" content="Hasaxxxx">
 <meta name="twitter:card" content="summary">
   
@@ -121,15 +121,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://github.com/nbZGLY/nbZGLY.github.io/2024/08/26/D3/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/nbZGLY/nbZGLY.github.io/2024/11/11/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">苏菲的世界---从神话到亚里士多德</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">特征提取</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-08-25T23:58:56.929Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-08-26</time></li>
+                <li><time datetime="2024-11-11T11:09:10.822Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-11-11</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Hasaxxxx</span>
                 </li>
@@ -138,13 +138,13 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            66
+                            ~1.76K
                         
                         字
                     </li>
                 
                 
-                    <li id="/2024/08/26/D3/" class="leancloud_visitors" data-flag-title="苏菲的世界---从神话到亚里士多德">
+                    <li id="/2024/11/11/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/" class="leancloud_visitors" data-flag-title="特征提取">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次阅读
                     </li>
@@ -155,14 +155,49 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1724633203399"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1731323401527"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><p>《苏》作为哲学启蒙书籍，虽然叙述语调低幼了些，但仍是一本哲学入门的好书</p>
-<h1 id="神话世界"><a href="#神话世界" class="headerlink" title="神话世界"></a>神话世界</h1><h1 id="自然派哲学家"><a href="#自然派哲学家" class="headerlink" title="自然派哲学家"></a>自然派哲学家</h1><h2 id="米雷斯特"><a href="#米雷斯特" class="headerlink" title="米雷斯特"></a>米雷斯特</h2><h3 id="泰利斯"><a href="#泰利斯" class="headerlink" title="泰利斯"></a>泰利斯</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><h3 id="-2"><a href="#-2" class="headerlink" title=""></a></h3><h3 id="-3"><a href="#-3" class="headerlink" title=""></a></h3><h2 id="雅典"><a href="#雅典" class="headerlink" title="雅典"></a>雅典</h2><h1 id="学者派"><a href="#学者派" class="headerlink" title="学者派"></a>学者派</h1><h1 id="关于“人”的哲学"><a href="#关于“人”的哲学" class="headerlink" title="关于“人”的哲学"></a>关于“人”的哲学</h1></div>
+            <div itemprop="articleBody"><p> 在果蔬分拣任务中，特征提取是从图像中提取有助于区分良品和次品的信息。这些特征可以是颜色、形状、纹理等。对于有基础的Python用户，可以使用OpenCV和一些Python库来实现这些特征提取。下面我会一步步带你实现几个常用的特征提取方法。</p>
+<h3 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1. 环境准备"></a>1. 环境准备</h3><p>首先需要安装一些Python库：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install opencv-python numpy</span><br></pre></td></tr></table></figure>
+
+<p>然后，导入这些库：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-加载图像"><a href="#2-加载图像" class="headerlink" title="2. 加载图像"></a>2. 加载图像</h3><p>从图像中读取果蔬图片，并进行基本的处理：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 读取图像</span></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;your_image.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果需要缩小图像尺寸</span></span><br><span class="line">img = cv2.resize(img, (<span class="number">300</span>, <span class="number">300</span>))</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-提取颜色特征"><a href="#3-提取颜色特征" class="headerlink" title="3. 提取颜色特征"></a>3. 提取颜色特征</h3><p>颜色特征可以帮助我们判断果蔬是否成熟。一个常用方法是计算颜色直方图。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将图像转换为HSV颜色空间（适合分析颜色）</span></span><br><span class="line">hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 计算HSV直方图</span></span><br><span class="line">hist = cv2.calcHist([hsv], [<span class="number">0</span>, <span class="number">1</span>], <span class="literal">None</span>, [<span class="number">50</span>, <span class="number">60</span>], [<span class="number">0</span>, <span class="number">180</span>, <span class="number">0</span>, <span class="number">256</span>])</span><br><span class="line"><span class="comment"># 将直方图归一化，使得不同尺寸图像的特征一致</span></span><br><span class="line">hist = cv2.normalize(hist, hist).flatten()</span><br></pre></td></tr></table></figure>
+
+<p>这段代码提取了颜色直方图，并对其归一化，可以用作模型的颜色特征。</p>
+<h3 id="4-提取形状特征"><a href="#4-提取形状特征" class="headerlink" title="4. 提取形状特征"></a>4. 提取形状特征</h3><p>形状特征可以用于识别果蔬是否有损伤或畸形。以下是获取轮廓面积的简单方法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将图像转为灰度图，然后进行边缘检测</span></span><br><span class="line">gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line">_, thresh = cv2.threshold(gray, <span class="number">128</span>, <span class="number">255</span>, cv2.THRESH_BINARY)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找轮廓</span></span><br><span class="line">contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提取第一个轮廓的面积作为形状特征</span></span><br><span class="line"><span class="keyword">if</span> contours:</span><br><span class="line">    contour_area = cv2.contourArea(contours[<span class="number">0</span>])</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    contour_area = <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<p><code>contour_area</code>可以作为果蔬的形状特征。通常，畸形或破损的果蔬会有异常的面积。</p>
+<h3 id="5-提取纹理特征"><a href="#5-提取纹理特征" class="headerlink" title="5. 提取纹理特征"></a>5. 提取纹理特征</h3><p>纹理特征帮助检测果蔬表面是否有瑕疵。可以使用灰度共生矩阵（GLCM）等方法来提取，但这里我们用简单的方法：图像的局部二值模式（LBP）。</p>
+<p>首先安装<code>scikit-image</code>库：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install scikit-image</span><br></pre></td></tr></table></figure>
+
+<p>然后提取纹理特征：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> skimage.feature <span class="keyword">import</span> local_binary_pattern</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数：8表示圆上取样点数，1表示半径</span></span><br><span class="line">lbp = local_binary_pattern(gray, <span class="number">8</span>, <span class="number">1</span>, method=<span class="string">&quot;uniform&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 计算LBP直方图</span></span><br><span class="line">(hist, _) = np.histogram(lbp.ravel(), bins=np.arange(<span class="number">0</span>, <span class="number">10</span>), <span class="built_in">range</span>=(<span class="number">0</span>, <span class="number">10</span>))</span><br><span class="line">hist = hist.astype(<span class="string">&quot;float&quot;</span>)</span><br><span class="line">hist /= hist.<span class="built_in">sum</span>()  <span class="comment"># 归一化</span></span><br></pre></td></tr></table></figure>
+
+<p>此代码生成的LBP直方图可以作为纹理特征。</p>
+<h3 id="6-将特征组合为输入数据"><a href="#6-将特征组合为输入数据" class="headerlink" title="6. 将特征组合为输入数据"></a>6. 将特征组合为输入数据</h3><p>可以把以上三种特征组合在一起，形成模型的输入数据。例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将所有特征合并为一个向量</span></span><br><span class="line">features = np.hstack([hist, [contour_area], hist])</span><br></pre></td></tr></table></figure>
+
+<p>这个<code>features</code>向量就是你可以用来训练模型的数据。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><strong>颜色特征</strong>：HSV直方图</li>
+<li><strong>形状特征</strong>：轮廓面积</li>
+<li><strong>纹理特征</strong>：LBP直方图</li>
+</ul>
+<p>学习这些特征的提取方法会帮助你逐步理解如何构建适合分拣系统的模型。在练习中，试着从不同种类的图像中提取这些特征，并观察它们的数值变化，以加深理解。</p>
+</div>
         </div>
         
             <div class="kratos-copyright text-center clearfix">
@@ -215,7 +250,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://github.com/nbZGLY/nbZGLY.github.io/2024/08/26/D3/",
+                text: "https://github.com/nbZGLY/nbZGLY.github.io/2024/11/11/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -227,10 +262,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://github.com/nbZGLY/nbZGLY.github.io/2024/08/26/D3/";
-            const title         = "「苏菲的世界---从神话到亚里士多德」";
-            const excerpt       = `《苏》作为哲学启蒙书籍，虽然叙述语调低幼了些，但仍是一本哲学入门的好书
-神话世界自然派哲学家米雷斯特泰利斯雅典学者派关于“人”的哲学`;
+            const hostUrl       = "https://github.com/nbZGLY/nbZGLY.github.io/2024/11/11/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/";
+            const title         = "「特征提取」";
+            const excerpt       = ` 在果蔬分拣任务中，特征提取是从图像中提取有助于区分良品和次品的信息。这些特征可以是颜色、形状、纹理等。对于有基础的Python用户，可以使用OpenCV和一些Python库来实现这些特征提取。下面我会一步步带你实现几个常用的特征提取...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -252,7 +286,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-08-26T00:46:43.399Z" itemprop="dateModified">最后编辑：2024-08-26</time>
+                    <time datetime="2024-11-11T11:10:01.527Z" itemprop="dateModified">最后编辑：2024-11-11</time>
                 </div>
             </div>
         </footer>
@@ -261,12 +295,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" D2 Test 2" href="/2024/08/25/D2/">&lt; 上一篇</a>
+                <a title=" 茭白分拣的研究路线" href="/2024/11/11/茭白分拣的研究路线/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" toki pona 道本语学习记录" href="/2024/08/26/toki pona/">下一篇 &gt;</a>
+                <a title=" 茭白分拣相关库" href="/2024/11/11/茭白分拣相关库/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -282,7 +316,7 @@
                 appKey: 'HlksFFRd7rWv7zInHY1qjNXq',
                 visitor: true,
                 enableQQ: false,
-                path: '/2024/08/26/D3/'
+                path: '/2024/11/11/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/'
             });
         }
         if (typeof Valine === 'undefined') {
