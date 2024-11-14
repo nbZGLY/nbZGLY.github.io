@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>C语言实现按任意键退出功能 | zgly&#39;s blog</title>
+  <title>OpenCV窗口缩放 | zgly&#39;s blog</title>
   
   <meta name="author" content="Hasaxxxx" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,15 +17,15 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="在C语言中，实现“按任意键退出”的功能通常需要使用标准输入输出库（stdio.h）中的函数。以下是几种常见的方法： 方法1：使用getchar()getchar()函数从标准输入读取一个字符，但不显示在屏幕上。按任意键后，程序会继续执行并退出。 #include &lt;stdio.h&gt; int main() {    printf(“按任意键退出…\n”);    getchar();">
+  <meta name="description" content="在 OpenCV 中，你可以使用以下几种方法来控制显示窗口的大小或缩放图像的尺寸： 方法 1：调整窗口大小为自动适应OpenCV 提供了 cv2.WINDOW_NORMAL 标志，用于创建一个可以调整大小的窗口。你可以使用鼠标手动调整窗口的大小： 1234567import cv2image &#x3D; cv2.imread(&#x27;0.jpg&#x27;)cv2.namedWindow(&quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C语言实现按任意键退出功能">
-<meta property="og:url" content="https://github.com/nbZGLY/nbZGLY.github.io/2024/09/09/c%20tips2/index.html">
+<meta property="og:title" content="OpenCV窗口缩放">
+<meta property="og:url" content="https://github.com/nbZGLY/nbZGLY.github.io/2024/11/14/opencv%E7%AA%97%E5%8F%A3%E7%BC%A9%E6%94%BE/index.html">
 <meta property="og:site_name" content="zgly&#39;s blog">
-<meta property="og:description" content="在C语言中，实现“按任意键退出”的功能通常需要使用标准输入输出库（stdio.h）中的函数。以下是几种常见的方法： 方法1：使用getchar()getchar()函数从标准输入读取一个字符，但不显示在屏幕上。按任意键后，程序会继续执行并退出。 #include &lt;stdio.h&gt; int main() {    printf(“按任意键退出…\n”);    getchar();">
+<meta property="og:description" content="在 OpenCV 中，你可以使用以下几种方法来控制显示窗口的大小或缩放图像的尺寸： 方法 1：调整窗口大小为自动适应OpenCV 提供了 cv2.WINDOW_NORMAL 标志，用于创建一个可以调整大小的窗口。你可以使用鼠标手动调整窗口的大小： 1234567import cv2image &#x3D; cv2.imread(&#x27;0.jpg&#x27;)cv2.namedWindow(&quot;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-09-09T01:17:29.844Z">
-<meta property="article:modified_time" content="2024-09-09T01:17:45.816Z">
+<meta property="article:published_time" content="2024-11-14T10:33:41.992Z">
+<meta property="article:modified_time" content="2024-11-14T10:33:57.541Z">
 <meta property="article:author" content="Hasaxxxx">
 <meta name="twitter:card" content="summary">
   
@@ -121,15 +121,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://github.com/nbZGLY/nbZGLY.github.io/2024/09/09/c%20tips2/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/nbZGLY/nbZGLY.github.io/2024/11/14/opencv%E7%AA%97%E5%8F%A3%E7%BC%A9%E6%94%BE/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">C语言实现按任意键退出功能</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">OpenCV窗口缩放</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-09-09T01:17:29.844Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-09-09</time></li>
+                <li><time datetime="2024-11-14T10:33:41.992Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-11-14</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Hasaxxxx</span>
                 </li>
@@ -138,13 +138,13 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~1.52K
+                            973
                         
                         字
                     </li>
                 
                 
-                    <li id="/2024/09/09/c%20tips2/" class="leancloud_visitors" data-flag-title="C语言实现按任意键退出功能">
+                    <li id="/2024/11/14/opencv%E7%AA%97%E5%8F%A3%E7%BC%A9%E6%94%BE/" class="leancloud_visitors" data-flag-title="OpenCV窗口缩放">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次阅读
                     </li>
@@ -155,25 +155,29 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1725844665816"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1731580437541"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><p>在C语言中，实现“按任意键退出”的功能通常需要使用标准输入输出库（stdio.h）中的函数。以下是几种常见的方法：</p>
-<p>方法1：使用getchar()<br>getchar()函数从标准输入读取一个字符，但不显示在屏幕上。按任意键后，程序会继续执行并退出。</p>
-<p>#include &lt;stdio.h&gt;</p>
-<p>int main() {<br>    printf(“按任意键退出…\n”);<br>    getchar();  &#x2F;&#x2F; 等待用户按下任意键<br>    return 0;<br>}<br>DiffCopyInsert<br>方法2：使用system(“pause”)<br>在Windows系统中，可以使用system(“pause”)命令来实现按任意键退出的功能。这个命令会暂停程序的执行，并显示“按任意键继续…”的提示。</p>
-<p>#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;</p>
-<p>int main() {<br>    printf(“按任意键退出…\n”);<br>    system(“pause”);  &#x2F;&#x2F; 等待用户按下任意键<br>    return 0;<br>}<br>DiffCopyInsert<br>方法3：使用_getch()（Windows专用）<br>_getch()函数从控制台读取一个字符，但不显示在屏幕上，也不需要按回车键。这个函数在conio.h头文件中定义，适用于Windows系统。</p>
-<p>#include &lt;stdio.h&gt;<br>#include &lt;conio.h&gt;  &#x2F;&#x2F; 包含_getch()函数</p>
-<p>int main() {<br>    printf(“按任意键退出…\n”);<br>    _getch();  &#x2F;&#x2F; 等待用户按下任意键<br>    return 0;<br>}<br>DiffCopyInsert<br>方法4：使用getc(stdin)<br>getc(stdin)函数从标准输入读取一个字符，类似于getchar()，但不显示在屏幕上。</p>
-<p>#include &lt;stdio.h&gt;</p>
-<p>int main() {<br>    printf(“按任意键退出…\n”);<br>    getc(stdin);  &#x2F;&#x2F; 等待用户按下任意键<br>    return 0;<br>}<br>DiffCopyInsert<br>注意事项<br>跨平台兼容性：system(“pause”)和_getch()是Windows专用的函数，如果在其他操作系统（如Linux或macOS）上运行，可能会导致编译错误或无法正常工作。<br>输入缓冲区：在使用getchar()或getc(stdin)时，如果之前有未处理的输入缓冲区内容，可能会导致程序立即退出。可以通过调用fflush(stdin)来清空输入缓冲区，但fflush(stdin)在某些编译器上可能不被支持。<br>跨平台解决方案<br>为了实现跨平台的“按任意键退出”功能，可以使用条件编译来选择不同的实现方式。</p>
-<p>#include &lt;stdio.h&gt;</p>
-<p>#ifdef _WIN32<br>#include &lt;conio.h&gt;<br>#define PAUSE_KEY() _getch()<br>#else<br>#define PAUSE_KEY() getchar()<br>#endif</p>
-<p>int main() {<br>    printf(“按任意键退出…\n”);<br>    PAUSE_KEY();  &#x2F;&#x2F; 等待用户按下任意键<br>    return 0;<br>}<br>DiffCopyInsert<br>在这个示例中，_WIN32宏用于检测是否为Windows系统，从而选择合适的函数来实现“按任意键退出”的功能。</p>
+            <div itemprop="articleBody"><p>在 OpenCV 中，你可以使用以下几种方法来控制显示窗口的大小或缩放图像的尺寸：</p>
+<h3 id="方法-1：调整窗口大小为自动适应"><a href="#方法-1：调整窗口大小为自动适应" class="headerlink" title="方法 1：调整窗口大小为自动适应"></a>方法 1：调整窗口大小为自动适应</h3><p>OpenCV 提供了 <code>cv2.WINDOW_NORMAL</code> 标志，用于创建一个可以调整大小的窗口。你可以使用鼠标手动调整窗口的大小：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">image = cv2.imread(<span class="string">&#x27;0.jpg&#x27;</span>)</span><br><span class="line">cv2.namedWindow(<span class="string">&quot;image&quot;</span>, cv2.WINDOW_NORMAL)  <span class="comment"># 设置窗口为可调整大小</span></span><br><span class="line">cv2.imshow(<span class="string">&quot;image&quot;</span>, image)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+
+<p>这样，显示窗口就可以通过鼠标自由缩放了。</p>
+<h3 id="方法-2：按比例缩放图像"><a href="#方法-2：按比例缩放图像" class="headerlink" title="方法 2：按比例缩放图像"></a>方法 2：按比例缩放图像</h3><p>如果想要程序自动缩放图像大小，可以使用 <code>cv2.resize()</code> 函数将图像缩放到指定大小。</p>
+<p>例如，按 50% 的比例缩小图像：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">image = cv2.imread(<span class="string">&#x27;0.jpg&#x27;</span>)</span><br><span class="line">scaled_image = cv2.resize(image, (<span class="number">0</span>, <span class="number">0</span>), fx=<span class="number">0.5</span>, fy=<span class="number">0.5</span>)  <span class="comment"># fx 和 fy 是缩放比例</span></span><br><span class="line">cv2.imshow(<span class="string">&quot;Scaled Image&quot;</span>, scaled_image)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+
+<p>或者，可以指定具体的尺寸来调整图像大小：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scaled_image = cv2.resize(image, (<span class="number">800</span>, <span class="number">600</span>))  <span class="comment"># 将图像缩放到 800x600 大小</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="方法-3：使用最大化窗口"><a href="#方法-3：使用最大化窗口" class="headerlink" title="方法 3：使用最大化窗口"></a>方法 3：使用最大化窗口</h3><p>如果你希望窗口在显示时自动最大化，可以使用 <code>cv2.WINDOW_GUI_EXPANDED</code> 标志来创建全屏窗口：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cv2.namedWindow(<span class="string">&quot;image&quot;</span>, cv2.WINDOW_GUI_EXPANDED)</span><br><span class="line">cv2.imshow(<span class="string">&quot;image&quot;</span>, image)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>通过这些方法，你可以方便地控制 OpenCV 窗口的大小和缩放，以适应不同的需求。</p>
 </div>
         </div>
         
@@ -227,7 +231,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://github.com/nbZGLY/nbZGLY.github.io/2024/09/09/c%20tips2/",
+                text: "https://github.com/nbZGLY/nbZGLY.github.io/2024/11/14/opencv%E7%AA%97%E5%8F%A3%E7%BC%A9%E6%94%BE/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -239,10 +243,10 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://github.com/nbZGLY/nbZGLY.github.io/2024/09/09/c%20tips2/";
-            const title         = "「C语言实现按任意键退出功能」";
-            const excerpt       = `在C语言中，实现“按任意键退出”的功能通常需要使用标准输入输出库（stdio.h）中的函数。以下是几种常见的方法：
-方法1：使用getchar()getchar()函数从标准输入读取一个字符，但不显示在屏幕上。按任意键后，程序会继续执...`;
+            const hostUrl       = "https://github.com/nbZGLY/nbZGLY.github.io/2024/11/14/opencv%E7%AA%97%E5%8F%A3%E7%BC%A9%E6%94%BE/";
+            const title         = "「OpenCV窗口缩放」";
+            const excerpt       = `在 OpenCV 中，你可以使用以下几种方法来控制显示窗口的大小或缩放图像的尺寸：
+方法 1：调整窗口大小为自动适应OpenCV 提供了 cv2.WINDOW_NORMAL 标志，用于创建一个可以调整大小的窗口。你可以使用鼠标手动调整...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -264,7 +268,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-09-09T01:17:45.816Z" itemprop="dateModified">最后编辑：2024-09-09</time>
+                    <time datetime="2024-11-14T10:33:57.541Z" itemprop="dateModified">最后编辑：2024-11-14</time>
                 </div>
             </div>
         </footer>
@@ -273,13 +277,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" C语言中多行语句的写法与运算符" href="/2024/09/09/c tips1/">&lt; 上一篇</a>
+                <a title=" 沟槽的数学笔记" href="/2024/11/12/沟槽的数学笔记/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 机械行为生活设想与试行" href="/2024/09/11/机械行为生活设想与试行/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -294,7 +294,7 @@
                 appKey: 'HlksFFRd7rWv7zInHY1qjNXq',
                 visitor: true,
                 enableQQ: false,
-                path: '/2024/09/09/c%20tips2/'
+                path: '/2024/11/14/opencv%E7%AA%97%E5%8F%A3%E7%BC%A9%E6%94%BE/'
             });
         }
         if (typeof Valine === 'undefined') {
